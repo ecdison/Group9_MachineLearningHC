@@ -16,6 +16,7 @@ y_train.to_csv('train_binary_y.csv', index=False)
 X_test.to_csv('test_binary_x.csv', index=False)
 y_test.to_csv('test_binary_y.csv', index=False)
 ```
+
 *This block save the data to the current directory, you can change its path.
 
 3. Use 'train_binary_x.csv' and 'train_binary_y.csv' to train the model (decision tree, random forest, MLP, perceptron, DNN or anything)
@@ -24,6 +25,7 @@ y_test.to_csv('test_binary_y.csv', index=False)
 4. Use 'test_binary_x.csv' to test the model, DO NOT use 'test_binary_y.csv' to evaluate it.
 
 5. Output the answer as the following format.
+
 *Do not change the order of the 'test_binary_x.csv'
 ```
 index, score
@@ -46,5 +48,6 @@ The seconf column should be ==the probility of having a birth (predict 1)==
 
 6. Save the answer as the format of "result-{method}-{accuracy_of_training_data}.txt"
 ex: result-RandomForest-0.954321.txt, result-DNN_SMOTE-0.954321.txt
+
 *accuracy_of_training_data should be with at least six decimal places
 
